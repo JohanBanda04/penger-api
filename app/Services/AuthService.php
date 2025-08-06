@@ -54,6 +54,7 @@ class AuthService
             abort(422,'Too many OTP Requests');
         }
 
+        //tes penger push
         $code = random_int(100000, 999999);
         $otp = Otp::create([
             'user_id' => $user->id,
